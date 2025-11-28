@@ -1,13 +1,143 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>super awesome swensite :3</title>
-        <p>I went to Brandywine Heights High School in Pennsylvania. I like fighting game and coding</p>
-        <img src = "OIP-493729709.png">
-        <a href = "https://www.se.rit.edu/~swen-101/00/index.html">Swen Website </a>
-        <ul style="list-style-type:disc;">
-            <li>how to better work with a team</li>
-            <li>how to manage a project effectively</li>
-        </ul>
+        <meta charset="UTF-8" />  <!--This is needed for correct display-->
+        <title> 
+            Queue
+        </title>
     </head>
+    <body>
+        <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="index.html">Queue</a></li>   <!--href will refer to specific files-->
+                <li><a href="map.html">Location</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </nav>
+        <style>
+
+        .textbox-wrapper {
+        position: relative;
+        display: inline-block;
+        }
+
+        .colored-textbox {
+            background-color: #b1dbff; /* Light blue background */
+            color: #000000;              /* Text color */
+            border: 1px solid #334d61;   /* Border color */
+            padding-left: 40px;             /* Inner spacing */
+            font-size: 16px;          /* Font size */
+            border-radius: 4px;       /* Rounded corners */
+            width: 260px;             /* Width of the textbox */
+            height: 32px;
+            box-sizing: border-box;
+        }
+
+        .colored-textbox::placeholder {
+        color: #000;
+        opacity: 1;
+        }
+
+        .status-light {
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 16px;              /* Circle width */
+        height: 16px;             /* Circle height */
+        border-radius: 50%;       /* Makes it perfectly round */
+        display: inline-block;    /* Allows it to sit inline with text */
+        pointer-events: none;
+        z-index: 3;
+        }
+
+        .red-light{background-color: red;    /* Circle color */}
+        .yellow-light{background-color: yellow;    /* Circle color */}
+        .green-light{background-color: limegreen;    /* Circle color */}
+
+        </style>
+        <h1>
+            QUEUE
+        </h1>
+        <h2>
+            Current Bot: BOT 1
+        </h2>
+        
+        <ol>
+            <li>
+                <div class= "textbox-wrapper">                    
+                    <span class="status-light red-light"></span>
+                    <input type="text" class="colored-textbox" placeholder= "Location 1 - Bin #1">
+                </div>
+            </li>
+            <li>
+                <div class= "textbox-wrapper">
+                    <span class="status-light red-light"></span>                
+                    <input type="text" class="colored-textbox" placeholder= "Location 1 - Bin #2">
+                </div>
+            </li>
+            <li>
+                <div class= "textbox-wrapper">
+                    <span class="status-light red-light"></span>                
+                    <input type="text" class="colored-textbox" placeholder= "Location 2 - Bin #1">
+                </div>
+            </li>
+            <li>
+                <div class= "textbox-wrapper">
+                    <span class="status-light yellow-light"></span>                
+                    <input type="text" class="colored-textbox" placeholder= "Location 2 - Bin #3">
+                </div>
+            </li>
+            <li>
+                <div class= "textbox-wrapper">
+                    <span class="status-light red-light"></span>                
+                    <input type="text" class="colored-textbox" placeholder= "Location 2 - Bin #4">
+                </div>
+            </li>
+            <li>
+                <div class= "textbox-wrapper">
+                    <span class="status-light yellow-light"></span>                
+                    <input type="text" class="colored-textbox" placeholder= "Location 3 - Bin #1">
+                </div>
+            </li>
+            <li>
+                <div class= "textbox-wrapper">
+                    <span class="status-light yellow-light"></span>                
+                    <input type="text" class="colored-textbox" placeholder= "Location 3 - Bin #2">
+                </div>
+            </li>
+            <li>
+                <div class= "textbox-wrapper">
+                    <span class="status-light yellow-light"></span>                
+                    <input type="text" class="colored-textbox" placeholder= "Location 3 - Bin #5">
+                </div>
+            </li>
+            <li>
+                <div class= "textbox-wrapper">
+                    <span class="status-light yellow-light"></span>                
+                    <input type="text" class="colored-textbox" placeholder= "Location 4 - Bin #2">
+                </div>
+            </li>
+            <li>
+                <div class= "textbox-wrapper">
+                    <span class="status-light yellow-light"></span>                
+                    <input type="text" class="colored-textbox" placeholder= "Location 5 - Bin #1">
+                </div>
+            </li>
+            <li>
+                <div class= "textbox-wrapper">
+                    <span class="status-light green-light"></span>                
+                    <input type="text" class="colored-textbox" placeholder= "Location 5 - Bin #3">
+                </div>
+            </li>
+            <li>
+                <div class= "textbox-wrapper">
+                    <span class="status-light green-light"></span>                
+                    <input type="text" class="colored-textbox" placeholder= "Location 6 - Bin #2">
+                </div>
+            </li>
+        </ol>
+        
+    </body>
 </html>
