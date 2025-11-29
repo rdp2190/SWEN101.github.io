@@ -15,12 +15,18 @@
         </nav>
         <style>
 
-            h2.left{
-                display: inline-block
-            }
-
             h2{
                 display: inline
+            }
+
+            h2.right{
+                position: absolute;
+                right: 0px;
+            }
+
+            h2.left{
+                position: absolute;
+                left: 0px;
             }
 
            .colored-textbox {
@@ -37,9 +43,9 @@
         </style>
 
        <div>
-        <h2 align="left">Status</h2>
-        <h2 align="center" >Type</h2>
-        <h2 align="right">Date</h2>
+        <h2 class = "right">Status</h2>
+        <h2>Type</h2>
+        <h2 class = "left">Date</h2>
        </div>
 
 
